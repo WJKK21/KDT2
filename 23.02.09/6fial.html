@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+
+#container{
+  width: 100vw;
+  height: 100vh;
+  background-color: darkgray;
+}
+#container > #wrapper{
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  padding: 2em;
+} 
+#container > #wrapper > div{
+  width: 40%;
+  height: 90%;
+  border: 1px solid black;
+  display: inline-block;
+}
+#container > #wrapper > div:nth-child(1){
+  background-color: coral;
+}
+#container > #wrapper > div:nth-child(2)>{
+  background-color: cornflowerblue;
+
+}
+#container > #wrapper > div:nth-child(2)> div{
+  width: 90%;
+  height: 45%;
+  border: 1px solid black;
+  margin: 1em;
+}
+ </style>
+</head>
+
+ <body>
+  <div id="container">
+    <div id="wrapper">
+      <div></div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

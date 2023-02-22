@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @media screen and (max-width: 450px){
+          /* root */
+    body>div{
+       width:450px;
+       height: 1000px;
+       background-color: #ccc;
+    }
+    body>div>div{
+      width: 100%;
+      height: 300px;
+      border:1px solid black
+    }
+    body>div>div:nth-child(1)>div{
+      width: 100%;
+      height: 30px;
+      border:1px solid green;
+    }
+    body>div>div:nth-child(2)>div{
+      width: 100%;
+      height: 30px;
+      border:1px solid green;
+      justify-content: space-around;
+      
+    }
+  }
+    @media screen and (max-width:1920px){
+      body>div{
+       width:1920px;
+       height: 1000px;
+       background-color: rgb(11, 61, 63);
+    }
+    body>div>div{
+      width: 100%;
+      height: 300px;
+      border:1px solid black
+    }
+    body>div>div:nth-child(1)>div{
+      width: 100%;
+      height: 30px;
+      border:1px solid rgb(0, 45, 128);
+    }
+    body>div>div:nth-child(2)>div{
+      width: 100%;
+      height: 30px;
+      border:1px solid rgb(0, 45, 128);
+    }
+    }
+  
+    
+   
+  </style>
+</head>
+<body>
+  <div>  
+    <div>
+      <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    <div>
+      <div></div>
+    <div></div>
+    </div>
+    
+  </div>
+  <div></div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+    .body {
+      background: linear-gradient(45deg, rgb(110, 118, 126),rgb(3, 4, 58) ); 
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      height: 98vh;
+      font-family: "Montserrat", sans-serif;
+    }      

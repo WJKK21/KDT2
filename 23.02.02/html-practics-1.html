@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        /* reset */
+        * { margin: 0; padding: 0; box-sizing:content-box ;}
+        /* id set */
+        #container{
+          width: 1920px;
+          background-color: #332727;
+        }
+        /*css 선택자
+        *은 전체 선택자 
+        #은 선택 기호  */
+
+
+        
+        #container > div {
+          height: auto;
+          width: auto;
+        }
+        /* class set */
+        .color-1 {color:darkcyan; font-size: 100px;}
+        .color-2 {color:sienna;font-size: 100px;}
+        .color-3 {color:chocolate;font-size: 100px;}
+
+        .ddiv{background-color: rgb(42, 105, 105); font-size: 100px;}
+
+      </style>
+    </head>
+
+  <body>
+    <!-- #container>div*3 -->
+    <div id="container">
+      
+      <div id="header" class="color-1" >32</div>
+      <div id="main" class="color-2">22</div>
+      <div id="footer" class="color-3">12</div>
+
+    </div>
+
+    <div class="ddiv">
+      asda
+    </div>
+
+  </body>
+  
+</html>

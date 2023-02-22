@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let student = [
+  "강지민",
+  "곽윤호",
+  "권예준",
+  "김동주",
+  "김은아",
+  "김종윤",
+  "김지섭",
+  "김형진",
+  "노수민",
+  "류은이",
+  "박달재",
+  "박수연",
+  "박준형",
+  "성해경",
+  "이경택",
+  "이세민",
+  "이재권",
+  "임지성",
+  "장루빈",
+  "정성철",
+  "정지은",
+  "정희은",
+  "최대건",
+  "한유진",
+  "허진",
+];
+
+    console.log(student[17]);
+    alert(student[17]);
+
+    let student = [];
+    let root = document.getElementById("root");
+    // root 문서의 식별자 (identifier)
+
+    for(let i = 0; i < student.length; i++) {
+      // 반복문 for문이 실행할 코드 
+      let li = document.createElement("li");
+      li.textContent = student[i];
+      li.style.backgroundColor = "#ccc";
+      root.appendChild(li);
+      //
+    }
+    // 내가 만들지 않은 함수()
+    // getElementById()
+    // createElement()
+    // appendChild()
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{
+      text-align: center;
+      box-sizing: border-box;}
+
+    #container{
+      display: flex;
+      flex-direction: column;
+      width: 1200px;
+      height: 700px;
+      align-items: center;
+    }
+
+    header{
+      display: flex;
+      width: 1200px;
+      height: 100px;
+      border: 1px solid black;
+    }
+
+    nav{
+      display: flex;
+      position: relative;
+      right: -700px;
+      top: 50px;
+      border: 1px solid black;
+      width: 400px;
+      height: 150px;
+      background-color: rgb(255, 255, 255);
+    }
+    ul {
+      margin: 0px;
+    }
+    #img{
+      display: flex;
+      width: 1200px;
+      height: 300px;
+      border: 1px solid black;
+    }
+    #main{
+      display: inline-flex;
+      width: 1200px;
+      height: 200px;      
+      border: 1px solid black;
+    }
+    main > div :nth-child(1){
+      width: 400px;
+      height: 200px;      
+    }
+
+    main > div :nth-child(2){
+      width: 400px;
+      height: 200px;      
+      border: 1px solid black;
+    }   
+    main > div :nth-child(3){
+      width: 400px;
+      height: 200px;      
+    }
+    footer{
+      display: inline-flex;
+      width: 1200px;
+      height: 100px;      
+      border: 1px solid black;
+    }
+    footer > div{
+      width: 200px;
+      height: 100px;     
+    }
+    footer> p{
+      margin: 0;
+      width: 800px;
+      height: 100px;      
+      border: 1px solid black;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div id="container">
+      <header>
+        <h1> 로고</h1>
+    <nav>
+    <li>탑
+      <ul>
+        <li>블라우스</li> 
+        <li>티</li>
+        <li>셔츠</li>
+        <li>니트</li>
+      </ul>
+    </li>
+    <li>
+      아우터
+      <ul>
+        <li>자켓</li>
+        <li>코트</li>
+        <li>가디건</li>
+        <li>머플러</li>
+      </ul>
+    </li>
+    <li>
+      팬츠
+      <ul>
+        <li>청바지</li>
+        <li>짧은바지</li>
+        <li>긴바지</li>
+        <li>레깅스</li>
+      </ul>
+    </li>
+    <li>
+      악세서리
+      <ul>
+        <li>귀고리</li>
+        <li>목걸이</li>
+        <li>반지</li>
+        <li>팔찌</li>
+      </ul>
+    </li>
+  </nav>
+
+</header>
+    
+      <main>
+
+        <div id="img"> 이미지</div>
+
+        <div id="main">
+        <div>공지사항</div>
+        <div>갤러리</div>
+        <div>바로가기</div>
+      </div>
+
+      </main>
+
+
+      <footer>
+        <div>로고</div>
+        <p>복사본</p>
+        <div>아이콘</div>
+      </footer>
+  </div>
+</body>
+
+</html>

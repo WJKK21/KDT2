@@ -1,0 +1,10 @@
+.solid {border-style:solid;
+    
+  border-top-width: 1px;
+  border-bottom-width: 7px;
+  border-left-width: 15px;
+  border-right-width: 3px;
+  border-radius: 2px;
+  border-color:rgb(255, 255, 255);
+  color:rgb(255, 255, 255);
+  }
