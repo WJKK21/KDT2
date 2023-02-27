@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+*{margin:0; padding:0; box-sizing:border-box;}
+body{ overflow-x:hidden;}
+</style>
+<body id="body">
+  <div id="root">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <script>
+    const body = document.getElementById('body')
+
+    body.style.width= "100vw";
+    body.style.height="100vh";
+    body.style.background="cadetblue";
+    body.style.display="flex";
+    body.style.justifyContent="center";
+    body.style.alignItems ="center";
+    body.style.position = 'relative';
+
+    const root = document.getElementById('root');
+    // #root css 태그 부분을 콘솔창 열어서 일일이 채워주기//
+    root.style.width= "500px";
+    root.style.height="500px";
+    root.style.borderRadius="250px";
+    root.style.opacity="0.8";
+    root.style.objectPosition = 'relative';
+    root.style.filter = 
+
+    
+    root.children[0].style.background="salmon";
+    root.children[0].style.marginTop="300px";
+    root.children[0].style.marginleft="300px";
+    root.children[0].style.width= "100px";
+    root.children[0].style.height="100px";
+    root.children[0].style.borderRadius="150px";
+    root.children[0].style.justifycontent="center";
+    root.children[0].style.alignItems ="center";
+    root.children[0].style.objectPosition = 'absolute';
+
+    root.children[1].style.background="cornflowerblue";
+    root.children[1].style.marginTop="50";
+    root.children[1].style.marginleft="-50px";
+    root.children[1].style.width= "100px";
+    root.children[1].style.height="100px";
+    root.children[1].style.borderRadius="150px";
+    root.children[1].style.filter.blur = "20px";
+    root.children[1].style.justifycontent="center";
+    root.children[1].style.alignItems ="center";
+    root.children[1].style.objectposition = 'absolute';
+
+
+    root.children[2].style.background="coral";
+    root.children[2].style.marginTop="-100px";
+    root.children[2].style.marginleft="50px";
+    root.children[2].style.width= "100px";
+    root.children[2].style.height="100px";
+    root.children[2].style.borderRadius="150px";
+    root.children[2].style.filter.blur = "10px";
+    root.children[2].style.justifycontent="center";
+    root.children[2].style.alignItems ="center";
+    root.children[2].style.objectPosition = 'absolute';
+
+    console.log(root);
+    console.dir(root.style);
+    console.log(root.children[0])
+
+
+
+    
+    
+/*    root.children[0].textContent = '123';
+    root.children[0].background = 'red';
+    root.children[0].style.width= "100px";
+    root.children[0].style.height="100px";
+    root.children[1].textContent = '123';
+    root.children[2].textContent = '123';
+*/
+
+  </script>
+</body>
+</html>

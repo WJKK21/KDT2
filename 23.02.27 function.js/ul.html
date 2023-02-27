@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+
+<script>
+    function dataFunc(a, b, c, d) {
+        let obj = {
+        parentData : document.querySelector(a),
+        childrenData : document.createElement(b),
+        grandchildren: document.createElement(c),
+        grandchildrenText : d
+        }
+        return obj;
+      }
+    let tagArray = ['div', 'footer', 'section']
+
+    let dataForm = dataFunc('#root', tagArray[1], 'div', 'hello');
+
+    let root = dataForm.parentData;
+    console.dir(root);
+    let ul = dataForm.childrenData;
+    root.appendChild(ul);
+    let bb = dataForm.grandchildren;
+    ul.appendChild(bb)
+    bb.textContent= dataForm.grandchildrenText;
+
+
+    // root.children[0] = 'hello';
+    // children에 값을 줘도 안먹힌다 html 컬렉션을 만들어야하나 
+
+    //동적으로 만들었다 스크립트로 ul 태그로 추가 함
+    //우리가 만들었다 정적이다 
+
+  </script>
+</body>
+</html>

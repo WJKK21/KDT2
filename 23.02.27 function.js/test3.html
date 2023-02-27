@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+    <div id="root"></div>
+    <script src="./test/student.js"></script> <script>
+    let root = document.getElementById('root'); 
+    let makeul = document.createElement('ul');
+     // styling
+    makeul.style.listStyleType = "none";
+    makeul.style.margin="0";
+    makeul.style.padding="0"; 
+    // set attribute
+    makeul.setAttribute('id', "student-list");\
+
+    root.appendChild(makeul);
+
+    // function declaration
+    function styleElement(element) { 
+      element.style.color = "cadetblue";
+      element.style.fontSize="20px"; 
+      element.style.border="1px soild cadetblue";
+    // loop
+
+    }
+    for (let i = 0; i < student.length; i++) {
+       let makeli = document.createElement('li'); makeli.textContent = student[i]; styleElement(makeli);
+    makeul.appendChild(makeli);
+
+    </script>
+    
+</body>
+</html>

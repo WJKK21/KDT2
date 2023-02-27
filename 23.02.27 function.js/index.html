@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+width: 100px;
+height: 100px;
+background-color: aquamarine;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script>
+    let rootElement = document.getElementById('root')
+    console.dir(rootElement);
+    let weekend = ['월요일 오늘', '수요일 쉼', '금요일 놀자', '토요일 고기', '일요일 잠', '화'];
+
+    let counter = 0;
+    
+    rootElement.addEventListener("click", function() {
+      rootElement.textContent = weekend[counter];
+      //root 에 text 넣는 곳에 어떤 배열, 어떤 변수를 숫자로 할당
+      counter = counter + 1;
+      if (counter >= weekend.length){
+        counter = 0;
+      }
+      // 클릭할때마다 다른 색을 넣을 수 있을까요 
+      console.log(counter);
+    });
+
+    console.dir (rootElement)
+
+    rootElement.style.background = black;
+
+    rootElement.style.backgroundColor = black;
+
+  </script>
+
+  
+</body>
+</html>
