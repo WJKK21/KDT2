@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="root">
+
+    <h1></h1>
+    <h2></h2>
+  </div>
+  
+  <script>
+    let root = document.getElementById('root');
+    function percentCalCulatorReturnString(realValue,totalValue ) {
+    let result = (realValue / totalValue) * 100;
+    return result + "%" ;
+  }
+  // 총 100점에서 20 점은 몇 퍼센트? 
+  
+  console.log(percentCalCulator(20, 100)); //20
+  root.children[0].innerHTML = percentCalCulator(20, 100);
+  root.children[1].innerHTML = percentCalCulator(44, 36790);
+
+  </script>
+
+
+</body>
+</html>

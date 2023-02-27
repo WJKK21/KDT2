@@ -7,28 +7,31 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    let setData = {
-      tagNames : ["header", "main", "footer"],
-      contentValues : ["머리", "메인", "발꼬락"],
-      colors : ["red", "green", "blue"]
-    }
-    let root = document.getElementById("root");
-    root.innerHTML = "<" + setData.tagNames[0] + ">" + setData.contentValues[0] + "</" + setData.tagNames[0] + ">";
-    
+  <ul id="menu">
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+    </ul>
+<script>
+  let menu = window.document.getElementById('menu');
+  console.dir(menu); //구조를 보는 것이 훨씬 더 중요하다
+  console.log (menu.children); // 배열 
+  console.log(menu.children[0]);
+  // 검증 완료 
+  console.dir(menu.children[0]);
+ for (let index = 0; index < menu.children.length; index++ ) {
+if (index === 2)  {
+  
+  menu.children[index].style.color = "red"; 
+}
+  else { 
 
-    // innerHTML이란, HTML의 요소를 의미한다.
-    console.dir(root);
-  //  root의 구조를 파악해보자..
-   console.log(setData);
-  // setData에 tagNames,contentValues,colors가 자식으로 있음.
-  console.log(setData.contentValues);
-  // contentValues의 자식들이 머리 메인 발꼬락
-  console.log(setData.tagNames);
-  // header, main, footer
-  console.log(root.tagNames.children[1]);
+    menu.children[index].style.backgroundColor = "gray";
+  }
 
+}1
   </script>
 </body>
 </html>
