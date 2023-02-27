@@ -10,6 +10,15 @@
 *{margin:0; padding:0; box-sizing:border-box;}
 body{ overflow-x:hidden;}
 
+#root > div {
+    /*div common shape */
+    width:500px;
+    height:500px;
+    border-radius: 250px;/*  > 원으로 */
+    opacity: 0.8; /* 투명도*/
+    /* position setup */
+    position:absolute;
+    }
 </style>
 <body>
   <div id="root">
@@ -19,67 +28,35 @@ body{ overflow-x:hidden;}
   </div>
   <script>
   
-  let rootElement = document.getElementById('root');
+  let root = document.getElementById('root');
     // #root css 태그 부분을 콘솔창 열어서 일일이 채워주기//
     root.style.width= "100vw";
     root.style.height="100vh";
     root.style.backgroundColor="cadetblue";
     root.style.display="flex";
-    root.style.justifycontent="center";
-    root.style.alignItems ="center";
     root.style.position="relative";
+    root.style.alignItems ="center";
+    root.style.justifyContent ="center";
 
     root.children[0].style.background="salmon";
     root.children[0].style.marginTop="300px";
     root.children[0].style.marginLeft="300px";
-    root.children[0].style.width= "500px";
-    root.children[0].style.height="500px";
-    root.children[0].style.borderRadius="250px";
-    root.children[0].style.filter.blur="20px";
-    root.children[0].style.justifycontent="center";
-    root.children[0].style.alignItems ="center";
-    root.children[0].style.opacity = '0.8';;
-    root.children[0].style.position="absolute";
-
     
     root.children[1].style.background="cornflowerblue";
-    root.children[1].style.marginTop="20px";
-    root.children[1].style.marginLeft="-150px";
-    root.children[1].style.width= "500px";
-    root.children[1].style.height="500px";
-    root.children[1].style.borderRadius="250px";
-    root.children[1].style.filter.blur = "20px";
-    root.children[1].style.justifycontent="center";
-    root.children[1].style.alignItems ="center";
-    root.children[1].style.opacity = '0.8';;
-    root.children[1].style.position="absolute";
-
+    root.children[1].style.marginTop="50px";
+    root.children[1].style.marginLeft="-50px;";
 
     root.children[2].style.backgroundColor="coral";
     root.children[2].style.marginTop="-100px";
     root.children[2].style.marginLeft="50px";
-    root.children[2].style.width= "500px";
-    root.children[2].style.height="500px";
-    root.children[2].style.borderRadius="250px";
-    root.children[2].style.filter.blur = "10px";
-    root.children[2].style.justifycontent="center";
-    root.children[2].style.alignItems ="center";
-    root.children[2].style.opacity = '0.8';
-    root.children[2].style.position="absolute";
-
-    let firstDiv = document.createElement('div');
-
 
     let rootChilds = root.children;
-    console.log(rootChilds.lenght);
-    
+    console.log(rootChilds);
+    children[0](background = 'red') ;{
+    function clickEvent(){ EventCounts = 'click';}
+    }
 </script>
 
 </body>
 </html>
-
-function colorchange (let color = 'red', 'blue')
- {
-  
-}
 
