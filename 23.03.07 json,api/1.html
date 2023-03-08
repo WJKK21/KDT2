@@ -14,7 +14,8 @@
     const root = document.getElementById('root')
 
     const xhr = new XMLHttpRequest();
-    const _URL = 'https://pokeapi.co/api/v2/pokemon';
+    const _URL = 'https://pokeapi.co/api/v2/pokemon/ditto';
+
     xhr.open('GET', _URL)
     xhr.send();
     xhr.addEventListener('load', function( ){
@@ -25,8 +26,8 @@
         root.appendChild(h1);
     })
 
-    
-    JSON.parse(JSON)
+    console.dir(open)
+
     </script>
 </body>
 </html>
